@@ -3,6 +3,7 @@ coverage
 node_modules
 browser/tests.js
 docs/api
+*~
 
 CONTRIBUTING.html
 LICENSE.html
