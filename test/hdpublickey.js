@@ -247,6 +247,14 @@ describe('HDPublicKey interface', function() {
       valid.should.equal(true);
     });
 
+    it('validates NOH paths', function() {
+      var valid;
+
+      valid = HDPublicKey.isValidPath('m/942/12');
+      valid.should.equal(true);
+
+    });
+
     it('rejects illegal paths', function() {
       var valid;
 

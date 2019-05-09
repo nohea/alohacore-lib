@@ -231,7 +231,13 @@ describe('HDPrivate key interface', function() {
       valid.should.equal(true);
     });
 
+    it('validates correct NOH paths', function() {
+      var valid;
 
+      valid = HDPrivateKey.isValidPath("m/44'/942'/2'");
+      valid.should.equal(true);
+    });
+    
     var invalid = [
       'm/-1/12',
       'bad path',
